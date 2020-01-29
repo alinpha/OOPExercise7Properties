@@ -36,7 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnSet = new System.Windows.Forms.Button();
             this.btnGet = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblBalloon = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -95,6 +95,7 @@
             this.btnSet.TabIndex = 6;
             this.btnSet.Text = "Set";
             this.btnSet.UseVisualStyleBackColor = true;
+            this.btnSet.Click += new System.EventHandler(this.btnSet_Click);
             // 
             // btnGet
             // 
@@ -104,22 +105,22 @@
             this.btnGet.TabIndex = 7;
             this.btnGet.Text = "Get";
             this.btnGet.UseVisualStyleBackColor = true;
+            this.btnGet.Click += new System.EventHandler(this.btnGet_Click);
             // 
-            // label4
+            // lblBalloon
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(70, 360);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 25);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "label4";
+            this.lblBalloon.AutoSize = true;
+            this.lblBalloon.Location = new System.Drawing.Point(70, 360);
+            this.lblBalloon.Name = "lblBalloon";
+            this.lblBalloon.Size = new System.Drawing.Size(0, 25);
+            this.lblBalloon.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(498, 574);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblBalloon);
             this.Controls.Add(this.btnGet);
             this.Controls.Add(this.btnSet);
             this.Controls.Add(this.txtHeight);
@@ -145,7 +146,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSet;
         private System.Windows.Forms.Button btnGet;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblBalloon;
     }
 }
 

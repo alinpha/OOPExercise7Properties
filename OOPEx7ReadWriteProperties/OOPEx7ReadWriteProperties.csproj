@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WMADPartyStore\WMADPartyStore.csproj">
+      <Project>{b9c82993-1dab-4129-877d-7734ce93a81a}</Project>
+      <Name>WMADPartyStore</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
